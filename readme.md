@@ -1,14 +1,12 @@
-## Advent of Typescript 2023
+## Advent of Typescript
 
 ```sh
 # Install
 pnpm i
 
-# Type check a specific day
-DAY=01 pnpm start
+# Type check a specific day and year
+DAY=01 YEAR=2024 pnpm start
 
 # Type check the whole project
 pnpm typecheck
 ```
-
-PS: If you know how to pass variable with pnpm let me know, I would love writing something like that: `pnpm start 01`
