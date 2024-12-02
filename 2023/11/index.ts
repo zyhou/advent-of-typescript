@@ -1,7 +1,7 @@
 import { Expect, Equal } from "type-testing";
 
 type DeepReadonly<T> = {
-  // eslint-disable-next-line @typescript-eslint/ban-types
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
   readonly [K in keyof T]: T[K] extends Function ? T[K] : DeepReadonly<T[K]>;
 };
 

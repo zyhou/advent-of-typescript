@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "types": ["@types/node"]
-  },
-  "extends": "./tsconfig.base.json",
-  "include": [".eslintrc.cjs"]
-}

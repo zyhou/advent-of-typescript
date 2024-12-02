@@ -8,21 +8,20 @@
     "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
+    "verbatimModuleSyntax": true,
 
     /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
 
-    /* If transpiling with TypeScript: */
-    "moduleResolution": "NodeNext",
-    "module": "NodeNext",
-    "outDir": "dist",
-    "sourceMap": false,
+    /* If NOT transpiling with TypeScript: */
+    "module": "preserve",
+    "noEmit": true,
 
-    // no need
-    // not working when you add a specific file on tsc command line
-    "noEmit": true
+    /* If your code doesn't run in the DOM: */
+    "lib": ["es2022"]
   },
   "include": ["./**/*.ts"],
-  "exclude": ["node_modules", "./**/*.js"]
+  "exclude": ["node_modules"]
 }

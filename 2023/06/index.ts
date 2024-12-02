@@ -23,7 +23,7 @@ type test_1 = Expect<Equal<test_1_expected, test_1_actual>>;
 type test_2_actual = FilterChildrenBy<
   //   ^?
   string | number | (() => void),
-  // eslint-disable-next-line @typescript-eslint/ban-types
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
   Function
 >;
 type test_2_expected = string | number;

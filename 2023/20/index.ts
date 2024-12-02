@@ -20,12 +20,10 @@ interface Letters {
   "*": ["░", "#", "░"];
 }
 
-type PrintRow<
-  T extends string,
-  Row extends 0 | 1 | 2,
-> = Uppercase<T> extends `${infer Letter extends keyof Letters}${infer Rest}`
-  ? `${Letters[Letter][Row]}${PrintRow<Rest, Row>}`
-  : "";
+type PrintRow<T extends string, Row extends 0 | 1 | 2> =
+  Uppercase<T> extends `${infer Letter extends keyof Letters}${infer Rest}`
+    ? `${Letters[Letter][Row]}${PrintRow<Rest, Row>}`
+    : "";
 
 type ToAsciiArt<T extends string> = T extends `${infer First}\n${infer Rest}`
   ? [...ToAsciiArt<First>, ...ToAsciiArt<Rest>]
