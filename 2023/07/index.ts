@@ -1,4 +1,4 @@
-import { Expect, Equal } from "type-testing";
+import type { Expect, Equal } from "type-testing";
 
 type AppendGood<T> = {
   [K in keyof T as `good_${string & K}`]: T[K];

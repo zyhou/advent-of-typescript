@@ -1,4 +1,4 @@
-import { Expect, Equal } from "type-testing";
+import type { Expect, Equal } from "type-testing";
 
 type Reverse<T> = T extends `${infer First}${infer Rest}`
   ? `${Reverse<Rest>}${First}`

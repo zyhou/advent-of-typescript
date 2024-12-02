@@ -1,4 +1,4 @@
-import { Expect, Equal } from "type-testing";
+import type { Expect, Equal } from "type-testing";
 
 type StringToNumber<T> = T extends `${infer N extends number}` ? N : never;
 

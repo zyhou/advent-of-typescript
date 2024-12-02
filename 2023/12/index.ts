@@ -1,4 +1,4 @@
-import { Expect, Equal } from "type-testing";
+import type { Expect, Equal } from "type-testing";
 
 // recursion
 // type FindSanta<T> = T extends [...infer Rest, infer Last]

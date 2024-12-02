@@ -11,6 +11,11 @@ export default tseslint.config(
   {
     files: ["**/*.ts"],
     rules: {
+      "@typescript-eslint/no-import-type-side-effects": "error",
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        { prefer: "type-imports", fixStyle: "separate-type-imports" },
+      ],
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
@@ -24,5 +29,5 @@ export default tseslint.config(
         },
       ],
     },
-  },
+  }
 );

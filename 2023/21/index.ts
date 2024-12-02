@@ -1,4 +1,4 @@
-import { Equal, Expect } from "type-testing";
+import type { Equal, Expect } from "type-testing";
 
 type TicTacToeChip = "❌" | "⭕";
 type TicTacToeEndState = `${TicTacToeChip} Won` | "Draw";

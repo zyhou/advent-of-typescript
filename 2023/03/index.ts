@@ -1,4 +1,4 @@
-import { Expect, Equal } from "type-testing";
+import type { Expect, Equal } from "type-testing";
 
 interface GiftWrapper<Gift1, Gift2, Gitf3> {
   present: Gift1;

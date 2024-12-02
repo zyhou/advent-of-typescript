@@ -1,4 +1,4 @@
-import { Expect, Equal } from "type-testing";
+import type { Expect, Equal } from "type-testing";
 
 type SantasFavoriteCookies = "ginger-bread" | "chocolate-chip";
 

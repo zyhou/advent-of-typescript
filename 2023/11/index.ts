@@ -1,4 +1,4 @@
-import { Expect, Equal } from "type-testing";
+import type { Expect, Equal } from "type-testing";
 
 type DeepReadonly<T> = {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type

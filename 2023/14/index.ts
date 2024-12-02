@@ -1,4 +1,4 @@
-import { Expect, Equal } from "type-testing";
+import type { Expect, Equal } from "type-testing";
 
 type DecipherNaughtyList<Words> = Words extends `${infer Start}/${infer Rest}`
   ? Start | DecipherNaughtyList<Rest>

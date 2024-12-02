@@ -1,4 +1,4 @@
-import { Expect, Equal } from "type-testing";
+import type { Expect, Equal } from "type-testing";
 
 // It used Distributive Conditional Types
 // https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#distributive-conditional-types
