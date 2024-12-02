@@ -2,6 +2,7 @@
   "name": "advent-of-typescript",
   "version": "1.0.0",
   "author": "zyhou",
+  "type": "module",
   "scripts": {
     "start": "tsc --watch ./$YEAR/$DAY/index.ts",
     "typecheck": "tsc",
@@ -12,8 +13,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
+    "@types/eslint-config-prettier": "^6.11.3",
     "@types/node": "^22.10.1",
     "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.13.0",
     "prettier": "^3.4.1",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.17.0"
