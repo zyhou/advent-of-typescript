@@ -49,6 +49,7 @@ export default tseslint.config(
           ignoreRestSiblings: true,
         },
       ],
+      "@typescript-eslint/ban-ts-comment": "off",
     },
   },
 );
