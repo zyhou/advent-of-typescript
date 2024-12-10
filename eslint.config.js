@@ -37,6 +37,10 @@ export default tseslint.config(
         "error",
         { prefer: "type-imports", fixStyle: "separate-type-imports" },
       ],
+      "@typescript-eslint/prefer-literal-enum-member": [
+        "error",
+        { allowBitwiseExpressions: true },
+      ],
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
