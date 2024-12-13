@@ -1,10 +1,8 @@
 /* eslint-disable no-self-assign */
 import type { Expect, Equal } from "type-testing";
 
-type Inv<T> = (x: T) => T;
-
-interface Demand<T, S extends Inv<T> = Inv<T>> {
-  demand: ReturnType<S>;
+interface Demand<in out T> {
+  demand: T;
 }
 
 // ------------------- Test section ---------------------
